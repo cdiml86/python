@@ -12,4 +12,4 @@ import os
 dangqianlujing = os.getcwd()
 print ('dangqianlujing = ',dangqianlujing)
 
-print ('你好!')
+print ('你好!!')
