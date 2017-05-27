@@ -1,6 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 # Created by Charles
+
 a = 100 +200
 print (a)
 
@@ -12,4 +13,4 @@ import os
 dangqianlujing = os.getcwd()
 print ('dangqianlujing = ',dangqianlujing)
 
-print ('你好!!')
+print ('你好!')
