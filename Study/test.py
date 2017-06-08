@@ -1,7 +1,7 @@
 import pymysql
 
 def connDB(): #连接数据库函数
-    conn=pymysql.connect(host='211.149.239.36',user='wechat',passwd='wechatmima',db='wechatdb',charset='utf8')
+    conn=pymysql.connect(host='localhost',user='root',passwd='danailin',db='wechat',charset='utf8mb4')
     cur=conn.cursor();
     return (conn,cur);
 
@@ -27,7 +27,7 @@ conn=connDB();
 cur=connDB();
 
 #调用更新记录的函数
-sta=exeUpdate(cur, "insert into list_name values('2017-05-22','A')");
+sta=exeUpdate(cur, "INSERT INTO content_list(date_d,nick_name,contentd) values('2017-05-22','A','123')");
 if(sta==1):
     print('插入成功');
 else:
