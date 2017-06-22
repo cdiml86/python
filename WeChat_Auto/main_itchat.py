@@ -13,7 +13,6 @@ def connDB(): #连接数据库函数
     conn=pymysql.connect(host='211.149.239.36',user='wechat',passwd='wechatmima',db='wechatdb',charset='utf8mb4')
     cur=conn.cursor()
     return (conn,cur)
-
 def exeUpdate(cur,sql):#更新语句，可执行update,insert语句
     sta=cur.execute(sql)
     return(sta)

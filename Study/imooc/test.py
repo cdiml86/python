@@ -1,4 +1,7 @@
-#!/usr/bin/python
-# -*- coding: utf-8 -*-
+#!/usr/bin/env python
+# _*_ coding: utf-8 _*_
 # Created by Charles
-print('你好')
+import time
+while 1:
+	print('test')
+	time.sleep(5)
